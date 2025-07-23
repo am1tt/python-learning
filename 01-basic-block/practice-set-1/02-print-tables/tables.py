@@ -13,3 +13,4 @@ for i in range(1,n):
 ## i referes to the range of numbers (iterations) : 1,2,3
 ## hence multiplying size and the iteration will cause to print the numbers ## 
 
+## am1tt : solved
