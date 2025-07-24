@@ -11,7 +11,7 @@ except OSError as exc:
 def func():
     raise ConnectionError
 
-try: 
+try:
     func()
-    except ConnectionError as e:
-        raise RuntimeError("failed to connect") from e
+except ConnectionError as e:
+    raise RuntimeError("failed to connect") from e
