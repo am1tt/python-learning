@@ -9,3 +9,6 @@ print(foo)
 ## or we can print in loop which is common as well 
 
 for i in foo:print([i])
+
+## slicing list 
+
