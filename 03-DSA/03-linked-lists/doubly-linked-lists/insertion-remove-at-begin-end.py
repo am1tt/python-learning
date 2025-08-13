@@ -46,9 +46,39 @@ def insert_at_end(head,tail,val):
 
     return head,new_node
 
+def remove_at_begin(head,tail): 
+    if head is None:
+        return None, None
+    
+    if head.next is None:
+        return None, None
+    
+    head = head.next 
+
+    head.prev = None
+
+    return head,tail
+    
+def remove_at_end(head,tail):
+    if tail is None:
+        return None
+    
+    if tail.prev is None:
+        return None,None
+
+    tail = tail.prev
+
+    tail.next = None
+    return head,tail
+
+
 head,tail = insert_at_beginning(head,tail,3)
 
 head,tail = insert_at_end(head,tail,8)
+
+# head,tail = remove_at_begin(head,tail)
+
+head,tail = remove_at_end(head,tail)
 
 
 display(head)
